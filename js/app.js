@@ -2,7 +2,7 @@
 var userName = prompt('Hi! What is your name!');
 
 // Greet the user by name in an alert
-alert('Hi, ' + username + ', thanks for stopping by!');
+alert('Hi, ' + userName + ', thanks for stopping by!');
 
 // log that to the console
 console.log('The user said their name is ' + userName);
@@ -26,7 +26,17 @@ if (answer1 === 'yes' || answer1 === 'y') {
     alert('Fail');
     console.log('The user got the wrong answer to #1 (no)');
 }
-
 // Tell user if they are wrong or right
 
 // Next question
+
+var answer2 = prompt('Do you like music?');
+
+if (answer2 === 'yes' || answer2 === 'y') {
+    //user enjoys music
+    alert('That is awesome, I am a D.J.');
+    console.log('' + userName + 'enjoys music like J.');
+} else { //user has no taste for music
+    alert('' + userName + 'has no taste in music.');
+    console.log('' + userName + ' needs a taste of reality')
+}
